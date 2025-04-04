@@ -1,19 +1,4 @@
-/* Gsap for mobile menu */;
-const button = document.querySelector('.menu_btn')
-const close = document.querySelector('.close')
-
-const animMenu = gsap.to(".menu_phone", {
-    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-    duration: 1,
-    paused: true,
-})
-
-/* Hide and display Mobile Menu */
-button.addEventListener('click', () => animMenu.play())
-close.addEventListener('click', () => animMenu.reverse())
-
-
-/* Dak-mode */
+/* Dark-mode */
 
 /* Dark Mode Button */
 var darkButton = document.querySelector(".dark_mode")
@@ -42,3 +27,24 @@ darkButton.onclick = function () {
         phoneIcon.src = "../images/phoneB.png"
     }
 }
+
+gsap.registerPlugin(ScrollTrigger)
+
+/* Gsap for mobile menu */;
+const button = document.querySelector('.menu_btn')
+const close = document.querySelector('.close')
+
+const animMenu = gsap.to(".menu_phone", {
+    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+    duration: 1,
+    paused: true,
+})
+
+/* Hide and display Mobile Menu */
+button.addEventListener('click', () => animMenu.play())
+close.addEventListener('click', () => animMenu.reverse())
+
+/* Backround slider hero */
+gsap.to('.hero_content', {
+
+})
