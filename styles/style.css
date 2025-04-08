@@ -104,10 +104,12 @@ header nav ul li a:hover:before {
 }
 
 .dark_mode {
-    width: 30px;
+    width: 15px;
     border-radius: 50%;
     margin-right: 20px;
     cursor: pointer;
+    padding: 15px;
+    border: 1px solid var(--secondary);
 }
 
 .nav_btn a {
@@ -151,10 +153,22 @@ header nav ul li a:hover:before {
     padding-right: 60px;
 }
 
+/* Flèche pour remonter */
+
+.return_top img {
+    position: fixed;
+    top: 90%;
+    right: 20px;
+    width: 30px;
+    padding: 17px;
+    background-color: var(--main_color);
+    z-index: 10;
+}
+
 /* Hero section */
 
 .hero {
-    height: 81vh;
+    height: 83vh;
     display: flex;
     justify-content: center;
     align-items: center;
