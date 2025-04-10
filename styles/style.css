@@ -114,7 +114,7 @@ header nav ul li a:hover:before {
 
 .nav_btn a {
     font-size: 14px;
-    padding: 19px 17px;
+    padding: 12px 24px;
     background-color: var(--main_color);
     border-radius: 30px;
     color: var(--white);
@@ -230,7 +230,7 @@ header nav ul li a:hover:before {
 }
 
 .hero_bottom a {
-    padding: 20px;
+    padding: 15px 30px;
     color: var(--white);
     background-color: var(--main_color);
     border-radius: 30px;
@@ -433,8 +433,9 @@ header nav ul li a:hover:before {
     width: 100%;
     height: auto;
     display: grid;
-    gap: 15px;
+    gap: 40px 15px;
     color: var(--secondary);
+    margin-bottom: 25px;
 }
 
 .newsItem_tof {
@@ -462,8 +463,8 @@ header nav ul li a:hover:before {
     font-size: 15px;
 }
 
-.news button {
-    padding: 17px 20px;
+.news a {
+    padding: 15px 30px;
     background-color: var(--main_color);
     color: var(--white);
     text-transform: capitalize;
@@ -473,7 +474,7 @@ header nav ul li a:hover:before {
     border: 1px solid var(--main_color);
 }
 
-.news button:hover {
+.news a:hover {
     background-color: transparent;
     color: var(--main_color);
     cursor: pointer;
@@ -510,45 +511,40 @@ header nav ul li a:hover:before {
 }
 
 .contact_top form input {
-    height: 40px;
+    height: 50px;
     padding: 0 7px;
-    border: 1px solid var(--grey);
+    border: 1px solid #979797;
     background-color: transparent;
     color: var(--secondary);
 }
 
 .contact_top form input::placeholder {
     text-transform: capitalize;
-    font-family: var(--main_font);
-    font-weight: bold;
 }
 
 .contact_top form textarea {
     resize: none;
     height: 100px;
     padding: 10px 7px;
-    border: 1px solid var(--grey);
+    border: 1px solid #979797;
     background-color: transparent;
     color: var(--secondary);
 }
 
 .contact_top form textarea::placeholder {
     text-transform: capitalize;
-    font-family: var(--main_font);
-    font-weight: bold;
 }
 
 .contact_btn button {
     border: 1px solid var(--main_color);
     color: var(--main_color);
-    font-family: var(--main_font);
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 10px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    padding: 10px 20px;
     background-color: transparent;
     transition: var(--transit);
     margin-bottom: 25px;
-    font-size: 13px;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -848,13 +844,19 @@ header nav ul li a:hover:before {
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (max-width: 900px) {
     .news_content {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .contact_grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .news_content {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
