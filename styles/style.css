@@ -80,7 +80,7 @@ header nav ul li a:hover {
     color: var(--main_color);
 }
 
-header nav ul li:first-child {
+header nav ul .last_li {
     margin-right: 0;
 }
 
@@ -414,7 +414,7 @@ header nav ul li a:hover:before {
     font-family: var(--main_font);
     color: var(--grey);
     text-transform: uppercase;
-    font-size: clamp(17px, 1.5vw, 35px);
+    font-size: clamp(17px, 1vw, 27px);
     margin-bottom: 15px;
     font-weight: bolder;
 }
