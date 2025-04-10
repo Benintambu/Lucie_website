@@ -12,6 +12,9 @@ var emailIcon = document.querySelector(".email_icon")
 /* Phone Icon */
 var phoneIcon = document.querySelector(".phone_icon")
 
+// Logo
+var logo = document.querySelector('.logo')
+
 /* Dark Mode Transition */
 darkButton.onclick = function () {
     document.body.classList.toggle("dark-mode");
@@ -20,11 +23,13 @@ darkButton.onclick = function () {
         homeICon.src = "../images/homeW.png"
         emailIcon.src = "../images/emailW.png"
         phoneIcon.src = "../images/phoneW.png"
+        logo.src = '../images/LLucia_bl.jpg'
     } else {
         darkButton.src = "../images/moon.png"
         homeICon.src = "../images/homeB.png"
         emailIcon.src = "../images/emailB.png"
         phoneIcon.src = "../images/phoneB.png"
+        logo.src = '../images/LLucia_wh.jpg'
     }
 }
 
